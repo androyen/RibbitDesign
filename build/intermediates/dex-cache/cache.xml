@@ -2,12 +2,6 @@
 <pre-dex-items>
 
     <item
-        dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/commons-io-2.4-d40673f56e3e9d027313807a5d2485cc160456b0.jar"
-        jar="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/libs/commons-io-2.4.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad"/>
-    <item
         dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/picasso-2.1.1-a3e4b476cdb907ee7c27305fecbe443e7c7b984e.jar"
         jar="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/libs/picasso-2.1.1.jar"
         jumboMode="false"
@@ -25,5 +19,11 @@
         jumboMode="false"
         revision="20.0.0"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/commons-io-2.4-d40673f56e3e9d027313807a5d2485cc160456b0.jar"
+        jar="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/libs/commons-io-2.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad"/>
 
 </pre-dex-items>

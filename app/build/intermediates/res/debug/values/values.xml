@@ -15,7 +15,11 @@
 
     <color name="apptheme_color">#61408c</color>
     <color name="background_purple">#492A71</color>
+    <color name="focused_purple_button">#d6c3ed</color>
     <color name="light_gray">#bbbbbb</color>
+    <color name="light_purple_button">#e1d2f3</color>
+    <color name="pressed_purple_button">#ba9dda</color>
+    <color name="text_color">#4C2B78</color>
     <!-- From: file:/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
@@ -45,7 +49,7 @@
     <string name="error_title">We\'re sorry!</string>
     <string name="general_error">Sorry, there was an error!</string>
     <string name="hello_world">Hello world!</string>
-    <string name="login_button_label">Login</string>
+    <string name="login_button_label">SIGN IN</string>
     <string name="login_error_message">Please make sure you enter a username and password!</string>
     <string name="login_error_title">Oops!</string>
     <string name="menu_camera_label">Camera</string>
@@ -72,19 +76,7 @@
     <!-- From: file:/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-    </style>
-
     <style name="AppTheme" parent="@style/_AppTheme" />
-
-    <style name="ButtonAppTheme" parent="android:Widget.Holo.Light.Button">
-        <item name="android:background">@drawable/apptheme_btn_default_holo_light</item>
-    </style>
 
     <style name="ImageButtonAppTheme" parent="android:Widget.Holo.Light.ImageButton">
         <item name="android:background">@drawable/apptheme_btn_default_holo_light</item>
@@ -92,7 +84,6 @@
 
     <style name="_AppTheme" parent="android:Theme.Holo.Light">
         <item name="android:editTextBackground">@drawable/apptheme_edit_text_holo_light</item>
-        <item name="android:buttonStyle">@style/ButtonAppTheme</item>
         <item name="android:imageButtonStyle">@style/ImageButtonAppTheme</item>
     </style>
 
