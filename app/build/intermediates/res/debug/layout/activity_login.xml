@@ -7,35 +7,17 @@
 
     <ImageView
         android:id="@+id/backgroundImage"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/AuthBackgroundImage"
         android:contentDescription="@string/content_desc_background"
-        android:scaleType="fitStart"
-        android:src="@drawable/background"
         />
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="60sp"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        style="@style/AuthTitle"/>
 
     <TextView
         android:id="@+id/subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
-        android:layout_centerHorizontal="true"
-        android:text="@string/subtitle"
-        android:textSize="13sp"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"/>
+        style="@style/AuthSubtitle"/>
 
     <LinearLayout
         android:id="@+id/editTextLayout"
