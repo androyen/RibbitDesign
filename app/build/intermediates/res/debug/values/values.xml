@@ -10,6 +10,10 @@
         <item>Choose Picture</item>
         <item>Choose Video</item>
     </string-array>
+    <!-- From: file:/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="background_purple">#3fffff</color>
     <!-- From: file:/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
@@ -21,6 +25,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="app_name">Ribbit</string>
+    <string name="content_desc_background">Ribbit Frog Background Image</string>
     <string name="email_hint">Email</string>
     <string name="empty_friends_label">Add friends to begin!</string>
     <string name="empty_inbox_label">No new messages!</string>
