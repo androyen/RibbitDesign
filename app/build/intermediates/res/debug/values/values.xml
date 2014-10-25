@@ -13,12 +13,16 @@
     <!-- From: file:/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/values/colors.xml -->
     <eat-comment />
 
-    <color name="background_purple">#3fffff</color>
+    <color name="background_purple">#492A71</color>
+    <color name="light_gray">#bbbbbb</color>
     <!-- From: file:/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="login_horizontal_padding">10dp</dimen>
+    <dimen name="login_vertical_margin">32dp</dimen>
+    <dimen name="login_vertical_padding">10dp</dimen>
     <dimen name="message_list_item_vertical_margin">8dp</dimen>
     <!-- From: file:/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/values/strings.xml -->
     <eat-comment />
@@ -49,9 +53,10 @@
     <string name="menu_send_label">Send</string>
     <string name="password_hint">Password</string>
     <string name="sign_up_button_label">Sign Up</string>
-    <string name="sign_up_text">Sign Up!</string>
+    <string name="sign_up_text">Don\'t have an account. Sign Up!</string>
     <string name="signup_error_message">Please make sure you enter a username, password, and email address!</string>
     <string name="signup_error_title">Oops!</string>
+    <string name="subtitle">A Treehouse Project</string>
     <string name="success_message">Message sent!</string>
     <string name="title_activity_edit_friends">Edit Friends</string>
     <string name="title_activity_login">LoginActivity</string>

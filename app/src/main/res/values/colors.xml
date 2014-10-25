@@ -1,3 +1,4 @@
 <resources>
-    <color name="background_purple">492A71</color>
+    <color name="background_purple">#492A71</color>
+    <color name="light_gray">#bbbbbb</color>
 </resources>

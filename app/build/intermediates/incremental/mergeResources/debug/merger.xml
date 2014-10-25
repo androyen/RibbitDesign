@@ -141,9 +141,15 @@
             <file
                 path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/values/dimens.xml"
                 qualifiers="" >
+                <dimen name="login_horizontal_padding" >10dp
+                </dimen>
+                <dimen name="login_vertical_margin" >32dp
+                </dimen>
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
                 <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+                <dimen name="login_vertical_padding" >10dp
                 </dimen>
                 <dimen name="message_list_item_vertical_margin" >8dp
                 </dimen>
@@ -159,7 +165,7 @@
                 </string>
                 <string name="title_section2" >Friends
                 </string>
-                <string name="sign_up_text" >Sign Up!
+                <string name="sign_up_text" >Don\'t have an account. Sign Up!
                 </string>
                 <string name="signup_error_title" >Oops!
                 </string>
@@ -236,6 +242,8 @@ Choose Video
                 <string name="title_activity_sign_up" >SignUpActivity
                 </string>
                 <string name="app_name" >Ribbit
+                </string>
+                <string name="subtitle" >A Treehouse Project
                 </string>
                 <string name="signup_error_message" >Please make sure you enter a username, password, and email address!
                 </string>
@@ -511,7 +519,9 @@ Choose Video
             <file
                 path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/values/colors.xml"
                 qualifiers="" >
-                <color name="background_purple" >#3fffff
+                <color name="background_purple" >#492A71
+                </color>
+                <color name="light_gray" >#bbbbbb
                 </color>
             </file>
             <file
