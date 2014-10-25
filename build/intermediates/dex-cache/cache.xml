@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/commons-io-2.4-d40673f56e3e9d027313807a5d2485cc160456b0.jar"
+        jar="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/libs/commons-io-2.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad"/>
+    <item
+        dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/picasso-2.1.1-a3e4b476cdb907ee7c27305fecbe443e7c7b984e.jar"
+        jar="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/libs/picasso-2.1.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ab19bfb23f641f189b6dca9a4d393f8dc291103a"/>
+    <item
+        dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/Parse-1.3.9-b0003c88a09b3b7ff7e677dcbe7917405f8e4c66.jar"
+        jar="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/libs/Parse-1.3.9.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="077b21d82e098a5d95e46b1868c664a23ada163a"/>
+    <item
+        dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-fe930dc68beb1e566675ce71b270d4091c6c249b.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+
+</pre-dex-items>
