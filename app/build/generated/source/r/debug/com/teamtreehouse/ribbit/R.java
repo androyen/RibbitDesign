@@ -146,9 +146,8 @@ public final class R {
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f080003;
+        public static final int AppBaseTheme=0x7f080002;
         public static final int AppTheme=0x7f080000;
-        public static final int ImageButtonAppTheme=0x7f080001;
-        public static final int _AppTheme=0x7f080002;
+        public static final int AuthBackground=0x7f080001;
     }
 }
