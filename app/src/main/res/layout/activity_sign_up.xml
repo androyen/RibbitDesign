@@ -25,37 +25,33 @@
 
     <EditText
         android:id="@+id/usernameField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/username_hint" >
+        android:hint="@string/username_hint"
+        style="@style/AuthEditText"
+         >
 
         <requestFocus />
     </EditText>
 
     <EditText
         android:id="@+id/passwordField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
+        android:hint="@string/password_hint"
+        style="@style/AuthEditText"
         android:inputType="textPassword"
-        android:hint="@string/password_hint" />
+         />
 
     <EditText
         android:id="@+id/emailField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
+        android:hint="@string/email_hint"
+        style="@style/AuthEditText"
         android:inputType="textEmailAddress"
-        android:hint="@string/email_hint" />
+         />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/signupButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextLayout"
-        android:text="@string/sign_up_button_label" />
+        android:text="@string/sign_up_button_label"
+        style="@style/AuthButton"
+         />
 
 </RelativeLayout>
