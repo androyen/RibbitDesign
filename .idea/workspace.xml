@@ -94,37 +94,36 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.8888888" vertical-offset="390" max-vertical-offset="1515">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state vertical-scroll-proportion="-3.8888888" vertical-offset="210" max-vertical-offset="1350">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="23" selection-end-column="42" />
               <folding>
                 <element signature="e#414#447#0" expanded="true" />
-                <element signature="e#894#924#0" expanded="true" />
-                <element signature="e#959#994#0" expanded="true" />
-                <element signature="e#1030#1065#0" expanded="true" />
-                <element signature="e#1094#1127#0" expanded="true" />
-                <element signature="e#1157#1190#0" expanded="true" />
-                <element signature="e#1218#1249#0" expanded="true" />
-                <element signature="e#1280#1311#0" expanded="true" />
-                <element signature="e#1577#1600#0" expanded="true" />
-                <element signature="e#2007#2030#0" expanded="true" />
-                <element signature="e#2366#2394#0" expanded="true" />
-                <element signature="e#2690#2725#0" expanded="true" />
-                <element signature="e#2761#2796#0" expanded="true" />
-                <element signature="e#3222#3244#0" expanded="true" />
+                <element signature="e#946#969#0" expanded="true" />
+                <element signature="e#1376#1399#0" expanded="true" />
+                <element signature="e#1735#1763#0" expanded="true" />
+                <element signature="e#2059#2094#0" expanded="true" />
+                <element signature="e#2130#2165#0" expanded="true" />
+                <element signature="e#2591#2613#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_sign_up.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="activity_sign_up.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2222223" vertical-offset="0" max-vertical-offset="810">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-              <folding />
+            <state vertical-scroll-proportion="-0.47727272" vertical-offset="609" max-vertical-offset="1005">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+              <folding>
+                <element signature="e#415#448#0" expanded="true" />
+                <element signature="e#923#946#0" expanded="true" />
+                <element signature="e#1222#1245#0" expanded="true" />
+                <element signature="e#1481#1501#0" expanded="true" />
+                <element signature="e#1739#1769#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,11 +158,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6926714" vertical-offset="307" max-vertical-offset="915">
-              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="1155">
+              <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -870,9 +869,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/button_custom.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" />
       </list>
     </option>
   </component>
@@ -1483,7 +1482,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987013" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32987013" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1622,13 +1621,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2222223" vertical-offset="0" max-vertical-offset="810">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="1155">
+          <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1638,32 +1634,34 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.8888888" vertical-offset="390" max-vertical-offset="1515">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state vertical-scroll-proportion="-3.8888888" vertical-offset="210" max-vertical-offset="1350">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="23" selection-end-column="42" />
           <folding>
             <element signature="e#414#447#0" expanded="true" />
-            <element signature="e#894#924#0" expanded="true" />
-            <element signature="e#959#994#0" expanded="true" />
-            <element signature="e#1030#1065#0" expanded="true" />
-            <element signature="e#1094#1127#0" expanded="true" />
-            <element signature="e#1157#1190#0" expanded="true" />
-            <element signature="e#1218#1249#0" expanded="true" />
-            <element signature="e#1280#1311#0" expanded="true" />
-            <element signature="e#1577#1600#0" expanded="true" />
-            <element signature="e#2007#2030#0" expanded="true" />
-            <element signature="e#2366#2394#0" expanded="true" />
-            <element signature="e#2690#2725#0" expanded="true" />
-            <element signature="e#2761#2796#0" expanded="true" />
-            <element signature="e#3222#3244#0" expanded="true" />
+            <element signature="e#946#969#0" expanded="true" />
+            <element signature="e#1376#1399#0" expanded="true" />
+            <element signature="e#1735#1763#0" expanded="true" />
+            <element signature="e#2059#2094#0" expanded="true" />
+            <element signature="e#2130#2165#0" expanded="true" />
+            <element signature="e#2591#2613#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6926714" vertical-offset="307" max-vertical-offset="915">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-          <folding />
+        <state vertical-scroll-proportion="-0.47727272" vertical-offset="609" max-vertical-offset="1005">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding>
+            <element signature="e#415#448#0" expanded="true" />
+            <element signature="e#923#946#0" expanded="true" />
+            <element signature="e#1222#1245#0" expanded="true" />
+            <element signature="e#1481#1501#0" expanded="true" />
+            <element signature="e#1739#1769#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
