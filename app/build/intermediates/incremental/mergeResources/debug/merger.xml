@@ -672,9 +672,9 @@
                 </color>
                 <color name="text_color" >#4C2B78
                 </color>
-                <color name="focused_purple_button" >#d6c3ed
-                </color>
                 <color name="light_gray" >#bbbbbb
+                </color>
+                <color name="focused_purple_button" >#d6c3ed
                 </color>
                 <color name="pressed_purple_button" >#ba9dda
                 </color>
@@ -702,9 +702,9 @@
                 qualifiers="" >
                 <string name="title_section1" >Inbox
                 </string>
-                <string name="video_file_size_warning" >The selected video must be less than 10 MB.
-                </string>
                 <string name="action_settings" >Settings
+                </string>
+                <string name="video_file_size_warning" >The selected video must be less than 10 MB.
                 </string>
                 <string name="title_section2" >Friends
                 </string>
@@ -716,9 +716,9 @@
                 </string>
                 <string name="content_desc_button_divider" >Button Divider
                 </string>
-                <string name="content_desc_background" >Ribbit Frog Background Image
-                </string>
                 <string name="error_selecting_file" >There was an error with the file selected. Please select a different file.
+                </string>
+                <string name="content_desc_background" >Ribbit Frog Background Image
                 </string>
                 <string name="title_activity_edit_friends" >Edit Friends
                 </string>
@@ -764,11 +764,11 @@ Choose Video
                 </string>
                 <string name="menu_camera_label" >Camera
                 </string>
-                <string name="error_opening_file" >There was a problem with the selected file.
+                <string name="error_title" >We\'re sorry!
                 </string>
                 <string name="error_external_storage" >There was a problem accessing your device\'s external storage.
                 </string>
-                <string name="error_title" >We\'re sorry!
+                <string name="error_opening_file" >There was a problem with the selected file.
                 </string>
                 <string name="menu_edit_friends_label" >Edit Friends
                 </string>
@@ -780,9 +780,9 @@ Choose Video
                 </string>
                 <string name="general_error" >Sorry, there was an error!
                 </string>
-                <string name="error_file_size_too_large" >The selected file is too large! Select a new file.
-                </string>
                 <string name="login_error_title" >Oops!
+                </string>
+                <string name="error_file_size_too_large" >The selected file is too large! Select a new file.
                 </string>
                 <string name="password_hint" >Password
                 </string>
@@ -792,13 +792,13 @@ Choose Video
                 </string>
                 <string name="subtitle" >A Treehouse Project
                 </string>
-                <string name="title_activity_login" >LoginActivity
-                </string>
                 <string name="signup_error_message" >Please make sure you enter a username, password, and email address!
                 </string>
-                <string name="title_activity_view_image" >Ribbit
+                <string name="title_activity_login" >LoginActivity
                 </string>
                 <string name="error_selecting_file_title" >We\'re sorry!
+                </string>
+                <string name="title_activity_view_image" >Ribbit
                 </string>
                 <string name="title_activity_recipients" >Choose Recipients
                 </string>
@@ -806,12 +806,6 @@ Choose Video
             <file
                 path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/values/styles.xml"
                 qualifiers="" >
-
-                <style name="AuthBackground" >
-                    <item name="android:background">
-@drawable/background_fill
-                    </item>
-                </style>
 
                 <style name="AuthBackgroundImage" >
                     <item name="android:layout_width">
@@ -825,6 +819,12 @@ fitStart
                     </item>
                     <item name="android:src">
 @drawable/background
+                    </item>
+                </style>
+
+                <style name="AuthBackground" >
+                    <item name="android:background">
+@drawable/background_fill
                     </item>
                 </style>
 
@@ -941,14 +941,6 @@ wrap_content
                 </style>
 
                 <style
-                    name="AppTheme"
-                    parent="android:Theme.Holo.Light" >
-                    <item name="android:editTextBackground">
-@drawable/apptheme_edit_text_holo_light
-                    </item>
-                </style>
-
-                <style
                     name="AuthTitle"
                     parent="android:Widget.Holo.Light.TextView" >
                     <item name="android:layout_width">
@@ -977,6 +969,14 @@ true
                     </item>
                     <item name="android:layout_marginTop">
 32dp
+                    </item>
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Holo.Light" >
+                    <item name="android:editTextBackground">
+@drawable/apptheme_edit_text_holo_light
                     </item>
                 </style>
             </file>
@@ -1008,6 +1008,16 @@ true
                     <!-- API 14 theme customizations can go here. -->
                 </style>
             </file>
+            <file
+                name="activity_login"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/layout-large/activity_login.xml"
+                qualifiers="large-v4"
+                type="layout" />
+            <file
+                name="activity_sign_up"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/layout-large/activity_sign_up.xml"
+                qualifiers="large-v4"
+                type="layout" />
         </source>
         <source path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/generated/res/rs/debug" />
         <source path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/generated/res/generated/debug" />
