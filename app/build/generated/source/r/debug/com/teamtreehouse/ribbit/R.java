@@ -18,9 +18,10 @@ public final class R {
         public static final int background_purple=0x7f050001;
         public static final int focused_purple_button=0x7f050002;
         public static final int light_gray=0x7f050003;
-        public static final int light_purple_button=0x7f050004;
-        public static final int pressed_purple_button=0x7f050005;
-        public static final int text_color=0x7f050006;
+        public static final int light_purple_background=0x7f050004;
+        public static final int light_purple_button=0x7f050005;
+        public static final int pressed_purple_button=0x7f050006;
+        public static final int text_color=0x7f050007;
     }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f060000;
@@ -187,7 +188,7 @@ public final class R {
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f080013;
+        public static final int AppBaseTheme=0x7f080014;
         public static final int AuthBackground=0x7f080005;
         public static final int AuthBackgroundImage=0x7f080006;
         public static final int AuthButton=0x7f080007;
@@ -200,7 +201,8 @@ public final class R {
         public static final int PopupMenu_Ribbit=0x7f08000e;
         public static final int ProgressBar_Ribbit=0x7f08000f;
         public static final int Theme_Ribbit=0x7f080010;
-        public static final int Theme_Ribbit_Overflow=0x7f080011;
-        public static final int Theme_Ribbit_Widget=0x7f080012;
+        public static final int Theme_Ribbit_LightPurpleBackground=0x7f080011;
+        public static final int Theme_Ribbit_Overflow=0x7f080012;
+        public static final int Theme_Ribbit_Widget=0x7f080013;
     }
 }

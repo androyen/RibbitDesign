@@ -17,6 +17,7 @@
     <color name="background_purple">#492A71</color>
     <color name="focused_purple_button">#d6c3ed</color>
     <color name="light_gray">#bbbbbb</color>
+    <color name="light_purple_background">#e9e4ed</color>
     <color name="light_purple_button">#e1d2f3</color>
     <color name="pressed_purple_button">#ba9dda</color>
     <color name="text_color">#4C2B78</color>
@@ -200,6 +201,12 @@
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Ribbit</item>
         <item name="android:editTextBackground">@drawable/apptheme_edit_text_holo_light</item>
         <item name="android:actionOverflowButtonStyle">@style/Theme.Ribbit.Overflow</item>
+        <item name="android:listViewStyle">@style/Theme.Ribbit.LightPurpleBackground</item>
+        <item name="android:gridViewStyle">@style/Theme.Ribbit.LightPurpleBackground</item>
+    </style>
+
+    <style name="Theme.Ribbit.LightPurpleBackground">
+        <item name="android:background">@color/light_purple_background</item>
     </style>
 
     <style name="Theme.Ribbit.Overflow" parent="@android:style/Widget.ActionButton.Overflow">
