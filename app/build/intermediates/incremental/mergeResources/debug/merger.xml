@@ -706,7 +706,11 @@
                 </dimen>
                 <dimen name="login_vertical_padding" >10dp
                 </dimen>
+                <dimen name="inbox_vertical_margin" >8dp
+                </dimen>
                 <dimen name="message_list_item_vertical_margin" >8dp
+                </dimen>
+                <dimen name="inbox_horizontal_margin" >8dp
                 </dimen>
             </file>
             <file
@@ -771,6 +775,8 @@ Choose Video
                 <string name="username_hint" >Username
                 </string>
                 <string name="login_error_message" >Please make sure you enter a username and password!
+                </string>
+                <string name="content_desc_message_icon" >Message Icon
                 </string>
                 <string name="hello_world" >Hello world!
                 </string>

@@ -26,6 +26,8 @@
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="inbox_horizontal_margin">8dp</dimen>
+    <dimen name="inbox_vertical_margin">8dp</dimen>
     <dimen name="login_horizontal_padding">10dp</dimen>
     <dimen name="login_vertical_margin">32dp</dimen>
     <dimen name="login_vertical_padding">10dp</dimen>
@@ -38,6 +40,7 @@
     <string name="cancel_button_label">CANCEL</string>
     <string name="content_desc_background">Ribbit Frog Background Image</string>
     <string name="content_desc_button_divider">Button Divider</string>
+    <string name="content_desc_message_icon">Message Icon</string>
     <string name="email_hint">Email</string>
     <string name="empty_friends_label">Add friends to begin!</string>
     <string name="empty_inbox_label">No new messages!</string>
