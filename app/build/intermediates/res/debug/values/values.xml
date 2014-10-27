@@ -32,6 +32,7 @@
     <dimen name="login_vertical_margin">32dp</dimen>
     <dimen name="login_vertical_padding">10dp</dimen>
     <dimen name="message_list_item_vertical_margin">8dp</dimen>
+    <dimen name="message_vertical_padding">8dp</dimen>
     <!-- From: file:/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
@@ -210,6 +211,7 @@
 
     <style name="Theme.Ribbit.LightPurpleBackground">
         <item name="android:background">@color/light_purple_background</item>
+        <item name="android:divider">@null</item>
     </style>
 
     <style name="Theme.Ribbit.Overflow" parent="@android:style/Widget.ActionButton.Overflow">
