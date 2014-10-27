@@ -23,7 +23,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.Ribbit" >
         <activity
-            android:name="com.teamtreehouse.ribbit.MainActivity"
+            android:name="com.teamtreehouse.ribbit.com.teamtreehouse.ribbit.ui.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -33,38 +33,38 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.teamtreehouse.ribbit.LoginActivity"
+            android:name="com.teamtreehouse.ribbit.com.teamtreehouse.ribbit.ui.LoginActivity"
             android:label="@string/title_activity_login"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.teamtreehouse.ribbit.SignUpActivity"
+            android:name="com.teamtreehouse.ribbit.com.teamtreehouse.ribbit.ui.SignUpActivity"
             android:label="@string/title_activity_sign_up"
-            android:parentActivityName="com.teamtreehouse.ribbit.LoginActivity"
+            android:parentActivityName="com.teamtreehouse.ribbit.com.teamtreehouse.ribbit.ui.LoginActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.teamtreehouse.ribbit.EditFriendsActivity"
+            android:name="com.teamtreehouse.ribbit.com.teamtreehouse.ribbit.ui.EditFriendsActivity"
             android:label="@string/title_activity_edit_friends"
-            android:parentActivityName="com.teamtreehouse.ribbit.MainActivity"
+            android:parentActivityName="com.teamtreehouse.ribbit.com.teamtreehouse.ribbit.ui.MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.teamtreehouse.ribbit.MainActivity" />
         </activity>
         <activity
-            android:name="com.teamtreehouse.ribbit.RecipientsActivity"
+            android:name="com.teamtreehouse.ribbit.com.teamtreehouse.ribbit.ui.RecipientsActivity"
             android:label="@string/title_activity_recipients"
-            android:parentActivityName="com.teamtreehouse.ribbit.MainActivity"
+            android:parentActivityName="com.teamtreehouse.ribbit.com.teamtreehouse.ribbit.ui.MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.teamtreehouse.ribbit.MainActivity" />
         </activity>
         <activity
-            android:name="com.teamtreehouse.ribbit.ViewImageActivity"
+            android:name="com.teamtreehouse.ribbit.com.teamtreehouse.ribbit.ui.ViewImageActivity"
             android:label="@string/title_activity_view_image"
-            android:parentActivityName="com.teamtreehouse.ribbit.MainActivity"
+            android:parentActivityName="com.teamtreehouse.ribbit.com.teamtreehouse.ribbit.ui.MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
