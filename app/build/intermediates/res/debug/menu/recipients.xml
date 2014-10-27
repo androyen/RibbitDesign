@@ -6,7 +6,7 @@
         android:showAsAction="always"
         android:title="@string/menu_send_label"
         android:visible="false"
-        android:icon="@drawable/ic_action_send_now" />
+        android:icon="@drawable/ic_menu_send" />
 
 </menu>
 <!-- From: file:/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/menu/recipients.xml -->
