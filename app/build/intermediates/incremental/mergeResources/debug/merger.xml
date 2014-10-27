@@ -654,6 +654,16 @@
                 qualifiers=""
                 type="layout" />
             <file
+                name="activity_login"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/layout-large/activity_login.xml"
+                qualifiers="large-v4"
+                type="layout" />
+            <file
+                name="activity_sign_up"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/layout-large/activity_sign_up.xml"
+                qualifiers="large-v4"
+                type="layout" />
+            <file
                 name="main"
                 path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/menu/main.xml"
                 qualifiers=""
@@ -828,6 +838,36 @@ fitStart
                     </item>
                 </style>
 
+                <style
+                    name="ProgressBar.Ribbit"
+                    parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" >
+                    <item name="android:progressDrawable">
+@drawable/progress_horizontal_ribbit
+                    </item>
+                </style>
+
+                <style
+                    name="ActionBar.Transparent.Ribbit"
+                    parent="@android:style/Widget.Holo.Light.ActionBar" >
+                    <item name="android:background">
+@drawable/ab_transparent_ribbit
+                    </item>
+                    <item name="android:progressBarStyle">
+@style/ProgressBar.Ribbit
+                    </item>
+                </style>
+
+                <style
+                    name="Theme.Ribbit.Widget"
+                    parent="@android:style/Theme.Holo" >
+                    <item name="android:popupMenuStyle">
+@style/PopupMenu.Ribbit
+                    </item>
+                    <item name="android:dropDownListViewStyle">
+@style/DropDownListView.Ribbit
+                    </item>
+                </style>
+
                 <style name="AuthEditText" >
                     <item name="android:layout_width">
 match_parent
@@ -889,28 +929,32 @@ vertical
                 </style>
 
                 <style
-                    name="AuthButton"
-                    parent="android:Widget.Holo.Light.Button" >
-                    <item name="android:layout_width">
-match_parent
+                    name="PopupMenu.Ribbit"
+                    parent="@android:style/Widget.Holo.Light.ListPopupWindow" >
+                    <item name="android:popupBackground">
+@drawable/menu_dropdown_panel_ribbit
                     </item>
-                    <item name="android:layout_height">
-wrap_content
+                </style>
+
+                <style
+                    name="DropDownListView.Ribbit"
+                    parent="@android:style/Widget.Holo.Light.ListView.DropDown" >
+                    <item name="android:listSelector">
+@drawable/selectable_background_ribbit
                     </item>
+                </style>
+
+                <style
+                    name="DropDownNav.Ribbit"
+                    parent="@android:style/Widget.Holo.Light.Spinner" >
                     <item name="android:background">
-@drawable/button_custom
+@drawable/spinner_background_ab_ribbit
                     </item>
-                    <item name="android:layout_marginLeft">
-@dimen/activity_horizontal_margin
+                    <item name="android:popupBackground">
+@drawable/menu_dropdown_panel_ribbit
                     </item>
-                    <item name="android:layout_marginRight">
-@dimen/activity_horizontal_margin
-                    </item>
-                    <item name="android:textSize">
-13sp
-                    </item>
-                    <item name="android:textColor">
-@color/text_color
+                    <item name="android:dropDownSelector">
+@drawable/selectable_background_ribbit
                     </item>
                 </style>
 
@@ -973,10 +1017,96 @@ true
                 </style>
 
                 <style
-                    name="AppTheme"
-                    parent="android:Theme.Holo.Light" >
+                    name="ActionBar.Solid.Ribbit"
+                    parent="@android:style/Widget.Holo.Light.ActionBar.Solid" >
+                    <item name="android:background">
+@drawable/ab_solid_ribbit
+                    </item>
+                    <item name="android:backgroundStacked">
+@drawable/ab_stacked_solid_ribbit
+                    </item>
+                    <item name="android:backgroundSplit">
+@drawable/ab_bottom_solid_ribbit
+                    </item>
+                    <item name="android:progressBarStyle">
+@style/ProgressBar.Ribbit
+                    </item>
+                </style>
+
+                <style
+                    name="ActionButton.CloseMode.Ribbit"
+                    parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode" >
+                    <item name="android:background">
+@drawable/btn_cab_done_ribbit
+                    </item>
+                </style>
+
+                <style
+                    name="ActionBarTabStyle.Ribbit"
+                    parent="@android:style/Widget.Holo.Light.ActionBar.TabView" >
+                    <item name="android:background">
+@drawable/tab_indicator_ab_ribbit
+                    </item>
+                </style>
+
+                <style
+                    name="Theme.Ribbit"
+                    parent="@android:style/Theme.Holo.Light" >
+                    <item name="android:actionBarItemBackground">
+@drawable/selectable_background_ribbit
+                    </item>
+                    <item name="android:popupMenuStyle">
+@style/PopupMenu.Ribbit
+                    </item>
+                    <item name="android:dropDownListViewStyle">
+@style/DropDownListView.Ribbit
+                    </item>
+                    <item name="android:actionBarTabStyle">
+@style/ActionBarTabStyle.Ribbit
+                    </item>
+                    <item name="android:actionDropDownStyle">
+@style/DropDownNav.Ribbit
+                    </item>
+                    <item name="android:actionBarStyle">
+@style/ActionBar.Solid.Ribbit
+                    </item>
+                    <item name="android:actionModeBackground">
+@drawable/cab_background_top_ribbit
+                    </item>
+                    <item name="android:actionModeSplitBackground">
+@drawable/cab_background_bottom_ribbit
+                    </item>
+                    <item name="android:actionModeCloseButtonStyle">
+@style/ActionButton.CloseMode.Ribbit
+                    </item>
                     <item name="android:editTextBackground">
 @drawable/apptheme_edit_text_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="AuthButton"
+                    parent="android:Widget.Holo.Light.Button" >
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:background">
+@drawable/button_custom
+                    </item>
+                    <item name="android:layout_marginLeft">
+@dimen/activity_horizontal_margin
+                    </item>
+                    <item name="android:layout_marginRight">
+@dimen/activity_horizontal_margin
+                    </item>
+                    <item name="android:textSize">
+13sp
+                    </item>
+                    <item name="android:textColor">
+@color/text_color
                     </item>
                 </style>
             </file>
@@ -1009,15 +1139,555 @@ true
                 </style>
             </file>
             <file
-                name="activity_login"
-                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/layout-large/activity_login.xml"
-                qualifiers="large-v4"
-                type="layout" />
+                name="ab_stacked_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/ab_stacked_solid_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
             <file
-                name="activity_sign_up"
-                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/layout-large/activity_sign_up.xml"
-                qualifiers="large-v4"
-                type="layout" />
+                name="tab_unselected_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/tab_unselected_focused_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_secondary_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/progress_secondary_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/ab_solid_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_primary_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/progress_primary_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="list_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/list_focused_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="cab_background_bottom_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/cab_background_bottom_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_stacked_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/ab_stacked_solid_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_bottom_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/ab_bottom_solid_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="list_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/list_focused_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_bottom_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/ab_bottom_solid_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/spinner_ab_pressed_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="menu_dropdown_panel_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/menu_dropdown_panel_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_disabled_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/spinner_ab_disabled_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_selected_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/tab_selected_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_selected_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/tab_selected_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_unselected_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/tab_unselected_pressed_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/spinner_ab_pressed_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="cab_background_top_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/cab_background_top_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_background_textured_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable/ab_background_textured_ribbit.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="progress_primary_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/progress_primary_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_unselected_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/tab_unselected_pressed_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_texture_tile_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/ab_texture_tile_ribbit.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_selected_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/tab_selected_focused_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_unselected_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/tab_unselected_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="cab_background_bottom_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/cab_background_bottom_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="list_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/list_pressed_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_disabled_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/spinner_ab_disabled_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_default_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/spinner_ab_default_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_selected_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/tab_selected_pressed_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="menu_dropdown_panel_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/menu_dropdown_panel_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/btn_cab_done_pressed_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_texture_tile_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/ab_texture_tile_ribbit.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/spinner_ab_focused_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="cab_background_bottom_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/cab_background_bottom_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_secondary_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/progress_secondary_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="list_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/list_pressed_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_bg_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/progress_bg_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_selected_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/tab_selected_focused_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="list_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/list_pressed_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_transparent_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/ab_transparent_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_default_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/spinner_ab_default_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/btn_cab_done_focused_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/spinner_ab_focused_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable/btn_cab_done_ribbit.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tab_selected_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/tab_selected_pressed_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/btn_cab_done_pressed_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/btn_cab_done_focused_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_indicator_ab_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable/tab_indicator_ab_ribbit.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tab_unselected_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/tab_unselected_pressed_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_background_ab_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable/spinner_background_ab_ribbit.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tab_unselected_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/tab_unselected_focused_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_unselected_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/tab_unselected_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_primary_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/progress_primary_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_texture_tile_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/ab_texture_tile_ribbit.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_secondary_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/progress_secondary_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="list_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/list_focused_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_disabled_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/spinner_ab_disabled_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_secondary_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/progress_secondary_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/btn_cab_done_focused_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/btn_cab_done_pressed_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="menu_dropdown_panel_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/menu_dropdown_panel_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/ab_solid_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_transparent_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/ab_transparent_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_selected_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/tab_selected_pressed_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_unselected_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/tab_unselected_focused_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="selectable_background_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable/selectable_background_ribbit.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tab_unselected_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/tab_unselected_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/btn_cab_done_pressed_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/spinner_ab_focused_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="cab_background_top_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/cab_background_top_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_stacked_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/ab_stacked_solid_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_bottom_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/ab_bottom_solid_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_bg_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/progress_bg_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="menu_dropdown_panel_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/menu_dropdown_panel_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="cab_background_top_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/cab_background_top_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/ab_solid_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_default_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/btn_cab_done_default_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/ab_solid_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_selected_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/tab_selected_pressed_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_unselected_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/tab_unselected_focused_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="list_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/list_pressed_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_disabled_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/spinner_ab_disabled_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_horizontal_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable/progress_horizontal_ribbit.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_cab_done_default_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/btn_cab_done_default_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/spinner_ab_pressed_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_transparent_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/ab_transparent_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="list_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/list_focused_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_selected_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/tab_selected_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_unselected_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/tab_unselected_pressed_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_pressed_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/spinner_ab_pressed_ribbit.9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="cab_background_top_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/cab_background_top_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_stacked_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/ab_stacked_solid_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_transparent_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/ab_transparent_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_primary_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/progress_primary_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_texture_tile_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xhdpi/ab_texture_tile_ribbit.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_bg_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/progress_bg_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="cab_background_bottom_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/cab_background_bottom_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_selected_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/tab_selected_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_unselected_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/tab_unselected_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="progress_bg_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/progress_bg_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/btn_cab_done_focused_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/spinner_ab_focused_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_default_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/btn_cab_done_default_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_selected_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/tab_selected_focused_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="tab_selected_focused_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/tab_selected_focused_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_default_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/spinner_ab_default_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_cab_done_default_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-mdpi/btn_cab_done_default_ribbit.9.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ab_bottom_solid_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-xxhdpi/ab_bottom_solid_ribbit.9.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="spinner_ab_default_ribbit"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/spinner_ab_default_ribbit.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
         </source>
         <source path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/generated/res/rs/debug" />
         <source path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/generated/res/generated/debug" />
