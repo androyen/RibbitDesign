@@ -678,9 +678,17 @@
                 qualifiers="" >
                 <color name="background_purple" >#492A71
                 </color>
+                <color name="swipeRefresh1" >#482c6f
+                </color>
                 <color name="light_purple_button" >#e1d2f3
                 </color>
+                <color name="swipeRefresh2" >#ad78d9
+                </color>
                 <color name="text_color" >#4C2B78
+                </color>
+                <color name="swipeRefresh3" >#dcadf4
+                </color>
+                <color name="swipeRefresh4" >#ad78d9
                 </color>
                 <color name="light_purple_background" >#e9e4ed
                 </color>

@@ -7,10 +7,12 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -25,12 +27,33 @@ import com.teamtreehouse.ribbit.R;
 public class InboxFragment extends ListFragment {
 
 	protected List<ParseObject> mMessages;
+
+    //Add Swipe to refresh
+    protected SwipeRefreshLayout mSwipeRefreshLayout;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_inbox,
 				container, false);
+
+        //Set up SwipeToRefresh
+        mSwipeRefreshLayout = (SwipeRefreshLayout)rootView.findViewById(R.id.swipeRefreshLayout);
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+
+            @Override
+            public void onRefresh() {
+                retrieveMessages();
+            }
+        });
+
+        //Set color schemes of the refresh indicator
+        mSwipeRefreshLayout.setColorScheme(
+                R.color.swipeRefresh1,
+                R.color.swipeRefresh2,
+                R.color.swipeRefresh3,
+                R.color.swipeRefresh4
+        );
 
 		return rootView;
 	}
@@ -40,41 +63,53 @@ public class InboxFragment extends ListFragment {
 		super.onResume();
 		
 		getActivity().setProgressBarIndeterminateVisibility(true);
-		
-		ParseQuery<ParseObject> query = new ParseQuery<ParseObject>(ParseConstants.CLASS_MESSAGES);
-		query.whereEqualTo(ParseConstants.KEY_RECIPIENT_IDS, ParseUser.getCurrentUser().getObjectId());
-		query.addDescendingOrder(ParseConstants.KEY_CREATED_AT);
-		query.findInBackground(new FindCallback<ParseObject>() {
-			@Override
-			public void done(List<ParseObject> messages, ParseException e) {
-				getActivity().setProgressBarIndeterminateVisibility(false);
-				
-				if (e == null) {
-					// We found messages!
-					mMessages = messages;
 
-					String[] usernames = new String[mMessages.size()];
-					int i = 0;
-					for(ParseObject message : mMessages) {
-						usernames[i] = message.getString(ParseConstants.KEY_SENDER_NAME);
-						i++;
-					}
-					if (getListView().getAdapter() == null) {
-						MessageAdapter adapter = new MessageAdapter(
-								getListView().getContext(), 
-								mMessages);
-						setListAdapter(adapter);
-					}
-					else {
-						// refill the adapter!
-						((MessageAdapter)getListView().getAdapter()).refill(mMessages);
-					}
-				}
-			}
-		});
+        retrieveMessages();
 	}
-	
-	@Override
+
+    private void retrieveMessages() {
+        ParseQuery<ParseObject> query = new ParseQuery<ParseObject>(ParseConstants.CLASS_MESSAGES);
+        query.whereEqualTo(ParseConstants.KEY_RECIPIENT_IDS, ParseUser.getCurrentUser().getObjectId());
+        query.addDescendingOrder(ParseConstants.KEY_CREATED_AT);
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> messages, ParseException e) {
+                getActivity().setProgressBarIndeterminateVisibility(false);
+
+
+                //After retrieving messages, stop the refresh animation
+                if(mSwipeRefreshLayout.isRefreshing()) {
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
+
+
+
+                if (e == null) {
+                    // We found messages!
+                    mMessages = messages;
+
+                    String[] usernames = new String[mMessages.size()];
+                    int i = 0;
+                    for(ParseObject message : mMessages) {
+                        usernames[i] = message.getString(ParseConstants.KEY_SENDER_NAME);
+                        i++;
+                    }
+                    if (getListView().getAdapter() == null) {
+                        MessageAdapter adapter = new MessageAdapter(
+                                getListView().getContext(),
+                                mMessages);
+                        setListAdapter(adapter);
+                    }
+                    else {
+                        // refill the adapter!
+                        ((MessageAdapter)getListView().getAdapter()).refill(mMessages);
+                    }
+                }
+            }
+        });
+    }
+
+    @Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
 		
