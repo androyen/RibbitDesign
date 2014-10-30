@@ -712,6 +712,8 @@
                 </dimen>
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
+                <dimen name="user_grid_spacing" >8dp
+                </dimen>
                 <dimen name="activity_vertical_margin" >16dp
                 </dimen>
                 <dimen name="inbox_vertical_margin" >8dp
@@ -1062,6 +1064,12 @@ true
                     </item>
                 </style>
 
+                <style name="Theme.Ribbit.LightPurpleBackground.GridView" >
+                    <item name="android:padding">
+@dimen/user_grid_spacing
+                    </item>
+                </style>
+
                 <style
                     name="ActionButton.CloseMode.Ribbit"
                     parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode" >
@@ -1118,7 +1126,7 @@ true
 @style/Theme.Ribbit.LightPurpleBackground
                     </item>
                     <item name="android:gridViewStyle">
-@style/Theme.Ribbit.LightPurpleBackground
+@style/Theme.Ribbit.LightPurpleBackground.GridView
                     </item>
                 </style>
 
