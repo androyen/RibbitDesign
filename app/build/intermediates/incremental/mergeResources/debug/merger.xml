@@ -1743,6 +1743,11 @@ wrap_content
                 path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/drawable-hdpi/spinner_ab_default_ribbit.9.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
+            <file
+                name="user_item"
+                path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/src/main/res/layout/user_item.xml"
+                qualifiers=""
+                type="layout" />
         </source>
         <source path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/generated/res/rs/debug" />
         <source path="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/generated/res/generated/debug" />

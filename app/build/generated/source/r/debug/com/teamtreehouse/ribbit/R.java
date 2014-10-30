@@ -103,10 +103,10 @@ public final class R {
         public static final int tab_unselected_ribbit=0x7f02003d;
     }
     public static final class id {
-        public static final int action_camera=0x7f0a0016;
-        public static final int action_edit_friends=0x7f0a0014;
-        public static final int action_logout=0x7f0a0015;
-        public static final int action_send=0x7f0a0017;
+        public static final int action_camera=0x7f0a0017;
+        public static final int action_edit_friends=0x7f0a0015;
+        public static final int action_logout=0x7f0a0016;
+        public static final int action_send=0x7f0a0018;
         public static final int backgroundImage=0x7f0a0000;
         public static final int buttonDivider=0x7f0a000a;
         public static final int cancelButton=0x7f0a000c;
@@ -116,6 +116,7 @@ public final class R {
         public static final int imageView=0x7f0a000d;
         public static final int loginButton=0x7f0a0006;
         public static final int messageIcon=0x7f0a0011;
+        public static final int nameLabel=0x7f0a0014;
         public static final int pager=0x7f0a0008;
         public static final int passwordField=0x7f0a0005;
         public static final int section_label=0x7f0a0010;
@@ -139,6 +140,7 @@ public final class R {
         public static final int fragment_inbox=0x7f030007;
         public static final int fragment_main_dummy=0x7f030008;
         public static final int message_item=0x7f030009;
+        public static final int user_item=0x7f03000a;
     }
     public static final class menu {
         public static final int main=0x7f090000;
