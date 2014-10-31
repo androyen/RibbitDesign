@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.parse.ParseUser;
+import com.squareup.picasso.Picasso;
 import com.teamtreehouse.ribbit.R;
 import com.teamtreehouse.ribbit.com.teamtreehouse.ribbit.utils.MD5Util;
 
@@ -45,6 +46,7 @@ public class UserAdapter extends ArrayAdapter<ParseUser> {
         //Get email address
         String email = user.getEmail().toLowerCase(); //Can only parse email addresses in lower case
 
+
         //In case email is empty
         if (email.equals("")) {
             //Use default placeholder user image
@@ -54,6 +56,11 @@ public class UserAdapter extends ArrayAdapter<ParseUser> {
 
             //Create hash
             String hash = MD5Util.md5Hex(email);
+            //Get the image from Gravatar  Show 404 if no image is found
+            String gravatarUrl = "http://www.gravatar.com/avatar" + hash + "?s=204&d=404";
+
+            //Use Picasso to load image from web. Does it asynchronously
+            Picasso.with(mContext).load(gravatarUrl).placeholder(R.drawable.avatar_empty).into(holder.userImageView);
         }
 
 //        //Setting up dates
