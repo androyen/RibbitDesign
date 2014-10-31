@@ -47,6 +47,7 @@
     <string name="content_desc_background">Ribbit Frog Background Image</string>
     <string name="content_desc_button_divider">Button Divider</string>
     <string name="content_desc_message_icon">Message Icon</string>
+    <string name="content_desc_user_avatar">User Avatar</string>
     <string name="email_hint">Email</string>
     <string name="empty_friends_label">Add friends to begin!</string>
     <string name="empty_inbox_label">No new messages!</string>

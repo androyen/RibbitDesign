@@ -736,6 +736,8 @@
                 </string>
                 <string name="title_section2" >Friends
                 </string>
+                <string name="content_desc_user_avatar" >User Avatar
+                </string>
                 <string name="sign_up_text" >Don\'t have an account. Sign Up!
                 </string>
                 <string name="signup_error_title" >Oops!
