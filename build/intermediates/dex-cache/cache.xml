@@ -8,17 +8,23 @@
         revision="20.0.0"
         sha1="ab19bfb23f641f189b6dca9a4d393f8dc291103a"/>
     <item
-        dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/Parse-1.3.9-b0003c88a09b3b7ff7e677dcbe7917405f8e4c66.jar"
-        jar="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/libs/Parse-1.3.9.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="077b21d82e098a5d95e46b1868c664a23ada163a"/>
-    <item
         dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-fe930dc68beb1e566675ce71b270d4091c6c249b.jar"
         jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.3-310813cf19a211a55a6e07049d59e92d1d84a20e.jar"
+        jar="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/libs/bolts-android-1.1.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e"/>
+    <item
+        dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/Parse-1.7.1-a60c0aeac08c1d1512565cb5515619a82e512661.jar"
+        jar="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/libs/Parse-1.7.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528"/>
     <item
         dex="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/build/intermediates/pre-dexed/debug/commons-io-2.4-d40673f56e3e9d027313807a5d2485cc160456b0.jar"
         jar="/Users/rnguyen/AndroidStudioProjects/RibbitDesign/app/libs/commons-io-2.4.jar"
