@@ -27,6 +27,7 @@ import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.ParseInstallation;
 import com.parse.ParseObject;
+import com.parse.ParsePush;
 import com.parse.ParseQuery;
 import com.parse.ParseRelation;
 import com.parse.ParseUser;
@@ -265,6 +266,15 @@ public class RecipientsActivity extends Activity {
 
         //Get the specific user ID from list of users in Parse
         query.whereContainedIn(ParseConstants.KEY_USER_ID, getRecipientIds());
+
+        //send the push notification
+        ParsePush push = new ParsePush();
+        //Attach query
+        push.setQuery(query);
+
+        //Message for push notification
+        push.setMessage(getString(R.string.push_message, ParseUser.getCurrentUser().getUsername()));
+        push.sendInBackground();
     }
 }
 
