@@ -48,6 +48,7 @@
     <string name="content_desc_button_divider">Button Divider</string>
     <string name="content_desc_message_icon">Message Icon</string>
     <string name="content_desc_user_avatar">User Avatar</string>
+    <string name="content_desc_user_checkmark">User checkmark</string>
     <string name="email_hint">Email</string>
     <string name="empty_friends_label">Add friends to begin!</string>
     <string name="empty_inbox_label">No new messages!</string>
@@ -189,6 +190,15 @@
         <item name="android:background">@drawable/spinner_background_ab_ribbit</item>
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_ribbit</item>
         <item name="android:dropDownSelector">@drawable/selectable_background_ribbit</item>
+    </style>
+
+    <style name="GridImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
     </style>
 
     <style name="PopupMenu.Ribbit" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
